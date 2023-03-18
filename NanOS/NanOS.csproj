@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <!--<RuntimeIdentifier>cosmos</RuntimeIdentifier>-->
+        <Platform>cosmos</Platform>
+        <SupportsX86Intrinsics>false</SupportsX86Intrinsics>
+        <SelfContained>True</SelfContained>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <EnableGDB>False</EnableGDB>
+        <StartCosmosGDB>False</StartCosmosGDB>
+        <VisualStudioDebugPort>Pipe: Cosmos\Serial</VisualStudioDebugPort>
+        <CosmosDebugPort>Serial: COM1</CosmosDebugPort>
+        <Launch>VMware</Launch>
+        <Profile>VMware</Profile>
+        <Description>Use VMware Player or Workstation to deploy and debug.</Description>
+        <PxeInterface>192.168.0.8</PxeInterface>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="resources\appicon.bmp" />
+      <None Remove="resources\console.bmp" />
+      <None Remove="resources\Cursor.bmp" />
+      <None Remove="resources\Cursor.png" />
+      <None Remove="resources\CursorNano.bmp" />
+      <None Remove="resources\NanoCursor.bmp" />
+      <None Remove="resources\nanoscur.bmp" />
+      <None Remove="resources\NanOSlogo.bmp" />
+      <None Remove="resources\nanoStart.bmp" />
+      <None Remove="resources\otherapps.bmp" />
+      <None Remove="resources\pcinfoicon.bmp" />
+      <None Remove="resources\poweroffAlpha.bmp" />
+      <None Remove="resources\settingsico.bmp" />
+      <None Remove="resources\TimePan.bmp" />
+      <None Remove="Wallpapers\wallpaper1.bmp" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="resources\appicon.bmp" />
+      <EmbeddedResource Include="resources\console.bmp" />
+      <EmbeddedResource Include="resources\CursorNano.bmp" />
+      <EmbeddedResource Include="resources\nanoscur.bmp" />
+      <EmbeddedResource Include="resources\NanOSlogo.bmp" />
+      <EmbeddedResource Include="resources\nanoStart.bmp" />
+      <EmbeddedResource Include="resources\otherapps.bmp" />
+      <EmbeddedResource Include="resources\pcinfoicon.bmp" />
+      <EmbeddedResource Include="resources\poweroffAlpha.bmp" />
+      <EmbeddedResource Include="resources\settingsico.bmp" />
+      <EmbeddedResource Include="resources\TimePan.bmp" />
+      <EmbeddedResource Include="Wallpapers\wallpaper1.bmp" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Cosmos.Build" Version="0-*" NoWarn="NU1604" />
+        <PackageReference Include="Cosmos.Debug.Kernel" Version="0-*" NoWarn="NU1604" />
+        <PackageReference Include="Cosmos.System2" Version="0-*" NoWarn="NU1604" />
+        <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    </ItemGroup>
+
+</Project>
