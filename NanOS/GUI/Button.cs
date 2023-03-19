@@ -36,8 +36,8 @@ namespace NanOS.GUI
         {
             if (_image != null)
             {
-                if (mouseX >= _x && mouseX <= _x + _width &&
-                    mouseY >= _y && mouseY <= _y + _height)
+                if (mouseX >= _x && mouseX <= _x + _image.Width &&
+                    mouseY >= _y && mouseY <= _y + _image.Height)
                 {
                     _canvas.DrawImageAlpha(_image, _x, _y);
                     return true;
@@ -59,5 +59,6 @@ namespace NanOS.GUI
                 return false;
             }
         }
+
     }
 }
