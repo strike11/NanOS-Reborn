@@ -1,3 +1,4 @@
+![Image alt](https://github.com/strike11/NanOS-Reborn/blob/master/NanOS/ForGitHub/NanOS_TextLogo.png)
 # NanOS - Reborn
 EN
 Hello!
