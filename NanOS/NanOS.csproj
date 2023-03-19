@@ -32,7 +32,8 @@
       <None Remove="resources\nanoStart.bmp" />
       <None Remove="resources\otherapps.bmp" />
       <None Remove="resources\pcinfoicon.bmp" />
-      <None Remove="resources\poweroffAlpha.bmp" />
+      <None Remove="resources\PowerOFF.bmp" />
+      <None Remove="resources\Reboot.bmp" />
       <None Remove="resources\settingsico.bmp" />
       <None Remove="resources\TimePan.bmp" />
       <None Remove="Wallpapers\wallpaper1.bmp" />
@@ -42,13 +43,13 @@
       <EmbeddedResource Include="Installer\NanOS_Installer.bmp" />
       <EmbeddedResource Include="resources\appicon.bmp" />
       <EmbeddedResource Include="resources\console.bmp" />
-      <EmbeddedResource Include="resources\CursorNano.bmp" />
       <EmbeddedResource Include="resources\nanoscur.bmp" />
       <EmbeddedResource Include="resources\NanOSlogo.bmp" />
       <EmbeddedResource Include="resources\nanoStart.bmp" />
       <EmbeddedResource Include="resources\otherapps.bmp" />
       <EmbeddedResource Include="resources\pcinfoicon.bmp" />
-      <EmbeddedResource Include="resources\poweroffAlpha.bmp" />
+      <EmbeddedResource Include="resources\StartPan\PowerOFF.bmp" />
+      <EmbeddedResource Include="resources\StartPan\Reboot.bmp" />
       <EmbeddedResource Include="resources\settingsico.bmp" />
       <EmbeddedResource Include="resources\TimePan.bmp" />
       <EmbeddedResource Include="Wallpapers\wallpaper1.bmp" />

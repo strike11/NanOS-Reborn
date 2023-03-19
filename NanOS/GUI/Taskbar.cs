@@ -43,13 +43,19 @@ namespace NanOS.GUI
             var startPanel = new StartPanel(_canvas,5,70,300,400, 0xFF0000, pen, blackpen);
             _canvas.DrawFilledRectangle(pen, point.X, point.Y, _screenWidth, _screenHeight);
             _canvas.DrawImageAlpha(TimeArea, 1820, 13);
-            
+            bool wasLeftButtonDown = false;
             Button StartButton = new Button(_canvas, 10, 8, startnano);
+
             if (StartButton.IsPressed((int)MouseManager.X, (int)MouseManager.Y))
             {
-                if (Cosmos.System.MouseManager.MouseState == Cosmos.System.MouseState.Left)
+                if (Cosmos.System.MouseManager.MouseState == Cosmos.System.MouseState.Left && !wasLeftButtonDown)
                 {
+                    wasLeftButtonDown = true;
                     startPanel.Draw();
+                }
+                else
+                {
+                    wasLeftButtonDown = false;
                 }
             }
         }
