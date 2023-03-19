@@ -20,6 +20,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="Installer\NanOS_Installer.bmp" />
       <None Remove="resources\appicon.bmp" />
       <None Remove="resources\console.bmp" />
       <None Remove="resources\Cursor.bmp" />
@@ -38,6 +39,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <EmbeddedResource Include="Installer\NanOS_Installer.bmp" />
       <EmbeddedResource Include="resources\appicon.bmp" />
       <EmbeddedResource Include="resources\console.bmp" />
       <EmbeddedResource Include="resources\CursorNano.bmp" />

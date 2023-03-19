@@ -29,27 +29,26 @@ namespace NanOS
         static byte[] wallpaper;
         protected override void BeforeRun()
         {
-            walpperImg = new Bitmap(wallpaper);
-            _canvas = FullScreenCanvas.GetFullScreenCanvas(new Mode(1920, 1080, ColorDepth.ColorDepth32));
-            _pen = new Pen(Color.White);
-            _point = new Point(0, 0);
-            _nanoMouse = new NanoMouse(_canvas);
+                walpperImg = new Bitmap(wallpaper);
+                _canvas = FullScreenCanvas.GetFullScreenCanvas(new Mode(1920, 1080, ColorDepth.ColorDepth32));
+                _pen = new Pen(Color.White);
+                _point = new Point(0, 0);
+                _nanoMouse = new NanoMouse(_canvas);
         }
 
         protected override void Run()
         {
-            
-            _blackpen = new Pen(Color.Black);
-            _canvas.DrawImage(walpperImg, _point);
-            var taskbar = new Taskbar(_canvas, 1920, 60, _blackpen);
-            taskbar.DrawTaskbar(_pen, _blackpen, _point);
-            Pen pen = new Pen(Color.Black);
-            _canvas.DrawString(DateTime.Now.ToString("HH:mm"), Cosmos.System.Graphics.Fonts.PCScreenFont.Default, _blackpen, 1840, 24);
-            _nanoMouse.DrawCursor();
-            _canvas.Display();
-            _canvas.Clear(Color.FromArgb(54, 82, 128));
-            int mouseX = (int)Sys.MouseManager.X;
-            int mouseY = (int)Sys.MouseManager.Y;
+                _blackpen = new Pen(Color.Black);
+                _canvas.DrawImage(walpperImg, _point);
+                var taskbar = new Taskbar(_canvas, 1920, 60, _blackpen);
+                taskbar.DrawTaskbar(_pen, _blackpen, _point);
+                Pen pen = new Pen(Color.Black);
+                _canvas.DrawString(DateTime.Now.ToString("HH:mm"), Cosmos.System.Graphics.Fonts.PCScreenFont.Default, _blackpen, 1840, 24);
+                _nanoMouse.DrawCursor();
+                _canvas.Display();
+                _canvas.Clear(Color.FromArgb(54, 82, 128));
+                int mouseX = (int)Sys.MouseManager.X;
+                int mouseY = (int)Sys.MouseManager.Y;
         }
 
     }
