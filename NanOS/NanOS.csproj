@@ -35,6 +35,7 @@
       <None Remove="resources\PowerOFF.bmp" />
       <None Remove="resources\Reboot.bmp" />
       <None Remove="resources\settingsico.bmp" />
+      <None Remove="resources\Taskbar.bmp" />
       <None Remove="resources\TimePan.bmp" />
       <None Remove="Wallpapers\wallpaper1.bmp" />
     </ItemGroup>
@@ -51,6 +52,7 @@
       <EmbeddedResource Include="resources\StartPan\PowerOFF.bmp" />
       <EmbeddedResource Include="resources\StartPan\Reboot.bmp" />
       <EmbeddedResource Include="resources\settingsico.bmp" />
+      <EmbeddedResource Include="resources\Taskbar.bmp" />
       <EmbeddedResource Include="resources\TimePan.bmp" />
       <EmbeddedResource Include="Wallpapers\wallpaper1.bmp" />
     </ItemGroup>

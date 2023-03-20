@@ -42,7 +42,7 @@ namespace NanOS.GUI
         {
             poweroffbit = new Bitmap(poweroffbyte);
             rebootbit = new Bitmap(rebootbyte);
-            _canvas.DrawFilledRectangle(_pen,_x, _y, _width, _height);
+            _canvas.DrawFilledRectangle(_pen, _x, _y, _width, _height);
             Button ShutDownStartButton = new Button(_canvas, 260, 430, poweroffbit);
             Button RebootStartButton = new Button(_canvas, 220, 430, rebootbit);
             _canvas.DrawString("NanOS", Cosmos.System.Graphics.Fonts.PCScreenFont.Default, _blackpen, 135, 85);
@@ -50,7 +50,7 @@ namespace NanOS.GUI
             {
                 if (Cosmos.System.MouseManager.MouseState == Cosmos.System.MouseState.Left)
                 {
-                    Power.Shutdown(); 
+                    Power.Shutdown();
                 }
             }
             if (RebootStartButton.IsPressed((int)MouseManager.X, (int)MouseManager.Y))

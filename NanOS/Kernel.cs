@@ -11,6 +11,8 @@ using Pen = Cosmos.System.Graphics.Pen;
 using IL2CPU.API.Attribs;
 using Bitmap = Cosmos.System.Graphics.Bitmap;
 using System;
+using Cosmos.Core.Memory;
+using Cosmos.Core;
 
 namespace NanOS
 {
@@ -43,12 +45,16 @@ namespace NanOS
                 var taskbar = new Taskbar(_canvas, 1920, 60, _blackpen);
                 taskbar.DrawTaskbar(_pen, _blackpen, _point);
                 Pen pen = new Pen(Color.Black);
-               // _canvas.DrawString(DateTime.Now.ToString("HH:mm"), Cosmos.System.Graphics.Fonts.PCScreenFont.Default, _blackpen, 1840, 24);
+                _canvas.DrawString(DateTime.Now.ToString("HH:mm"), Cosmos.System.Graphics.Fonts.PCScreenFont.Default, _blackpen, 1840, 24);
                 _nanoMouse.DrawCursor();
                 _canvas.Display();
                 _canvas.Clear(Color.FromArgb(54, 82, 128));
                 int mouseX = (int)Sys.MouseManager.X;
                 int mouseY = (int)Sys.MouseManager.Y;
+            for (int i = 0; i < 10; i++)
+            {
+                Cosmos.Core.Memory.Heap.Collect();
+            }
         }
 
     }
