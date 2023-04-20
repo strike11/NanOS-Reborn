@@ -4,7 +4,7 @@
 
 EN
 <h1 align ="center">Hello!</h1>
-Welcome to the NanOS project repository - an operating system written in C#. This is a re-imagining of the old version of NanOS, which was developed some time ago.
+Welcome to the NanOS project repository - an operating system written in C# with <a href="https://github.com/CosmosOS/Cosmos">Cosmos</a>. This is a re-imagining of the old version of NanOS, which was developed some time ago.
 
 Our goal is to create a lightweight, fast, and efficient operating system for personal computers.
 
@@ -15,7 +15,7 @@ In this repository, you will find the source code for our operating system, as w
 RU
 <h1 align ="center">Привет!</h1>
 
-Добро пожаловать в репозиторий проекта NanOS - операционной системы, написанной на языке C#. Это перерождение старой версии NanOS, которая была разработана некоторое время назад.
+Добро пожаловать в репозиторий проекта NanOS - операционной системы, написанной на языке C# с помощью <a href="https://github.com/CosmosOS/Cosmos">Cosmos</a>. Это перерождение старой версии NanOS, которая была разработана некоторое время назад.
 
 Наша цель - создать легковесную, быструю и эффективную операционную систему для персональных компьютеров.
 
