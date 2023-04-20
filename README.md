@@ -1,8 +1,9 @@
-![Image alt](https://github.com/strike11/NanOS-Reborn/blob/master/NanOS/ForGitHub/nanoslogogit.png)
-# NanOS - Reborn
-EN
-Hello!
+<p align="center">
+<img src="https://github.com/strike11/NanOS-Reborn/blob/master/NanOS/ForGitHub/nanoslogogit.png">
+</p>
 
+EN
+<h1 align ="center">Hello!</h1>
 Welcome to the NanOS project repository - an operating system written in C#. This is a re-imagining of the old version of NanOS, which was developed some time ago.
 
 Our goal is to create a lightweight, fast, and efficient operating system for personal computers.
@@ -12,7 +13,7 @@ In this repository, you will find the source code for our operating system, as w
 **Thank you for your interest in the NanOS project! We hope that our operating system will be useful and interesting to you.**
 ===================================
 RU
-Привет!
+<h1 align ="center">Привет!</h1>
 
 Добро пожаловать в репозиторий проекта NanOS - операционной системы, написанной на языке C#. Это перерождение старой версии NanOS, которая была разработана некоторое время назад.
 
